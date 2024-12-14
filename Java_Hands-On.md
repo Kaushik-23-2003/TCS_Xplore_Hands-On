@@ -28,14 +28,17 @@ Write a method `calculateInterest` which will take the `Account` object and `noO
 Finally, calculate the interest amount by multiplying the balance with the updated interest rate.
 
 **Input Example:**
+```plaintext
 1 
 1000 
 10 
 5
+```
 
 **Expected Output:**
+```plaintext
 105.000
-
+```
 
 ### Solution:
 
@@ -129,8 +132,10 @@ Write a program to check the distance of 2D points from the origin and print the
 </pre>
 
 ### Expected Output:
--4.0 -4.0
-
+```plaintext
+-4.0
+-4.0
+```
 This output indicates that the point with the highest distance from the origin is `(-4.0, -4.0)`.
 
 ### Solution:
