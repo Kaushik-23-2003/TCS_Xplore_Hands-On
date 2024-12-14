@@ -119,7 +119,14 @@ Write a program to check the distance of 2D points from the origin and print the
 - Define the method `pointWithHighestOriginDistance(Point p1, Point p2, Point p3)` in the `Solution` class which takes three point objects as input parameters and returns the point with the highest distance from the origin.
 
 ### Sample Input:
-<pre> ``` 2 2 3 3 -4 -4 ``` </pre>
+<pre>
+   2 
+   2 
+   3 
+   3 
+   -4 
+   -4 
+</pre>
 
 ### Expected Output:
 -4.0 -4.0
