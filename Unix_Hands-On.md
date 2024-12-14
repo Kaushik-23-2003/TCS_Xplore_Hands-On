@@ -14,7 +14,7 @@ Write a Unix command to count the occurrence of the word "Unix" in a given file.
 
 Unix is a multi-user, multi-tasking system. It is a command-based operating system. We will learn unix architecture and the unix commands in this module.
 
-### Expected Output:
+## Expected Output:
 3
 
 ### Solution:
@@ -30,14 +30,14 @@ grep -o -i unix $1 | wc -l
 
 Write the unix command to count the number of words in the first 3 lines of a file.
 
-### Input File:
+## Input File:
 Unix is a command based operating system.
 We will learn unix in this module.
 This is a test file.
 We are using this file to practice some commands.
 We have reached the end of the file.
 
-### Expected Output:
+## Expected Output:
 19
 
 ### Solution:
@@ -52,14 +52,14 @@ head -3|wc -w
 ### Task
 Write a Unix shell script to find the sum of all even numbers from a list of given numbers. The script should first take the count of numbers to be added as user input, followed by the numbers one by one.
 
-#### Input Format:
+### Input Format:
 1. The first line contains the count of numbers to be added.
 2. The following lines contain the numbers to be added.
 
-### Example Input:
+## Example Input:
 3 10 11 30
 
-### Expected Output:
+## Expected Output:
 Total = 40
 
 ### Solution:
@@ -86,7 +86,7 @@ awk '
 ### Task
 Write a Unix command to find the name of the student who has the highest score. The student details are stored in a file with space as the delimiter, in the following format:
 
-**Input File:**
+## Input File:
 | RollNo | Name | Score |
 |--------|------|-------|
 | 234    | ABC  | 70    |
@@ -95,7 +95,7 @@ Write a Unix command to find the name of the student who has the highest score. 
 | 234    | XYZ  | 80    |
 | 456    | ERT  | 45    |
 
-### Expected Output:
+## Expected Output:
 XYZ
 
 ### Solution:
@@ -110,7 +110,7 @@ sort -k3,3 -rn -t" " file.txt | head -n1 | awk '{print $2}'
 ## Task
 Write a shell script to find the count of employees whose salary is less than the average salary of all employees. 
 
-### Input File:
+## Input File:
 | EmpID | EmpName | Salary |
 |-------|---------|--------|
 | 100   | A       | 30000  |
@@ -118,7 +118,7 @@ Write a shell script to find the count of employees whose salary is less than th
 | 103   | C       | 15000  |
 | 104   | D       | 40000  |
 
-### Expected Output:
+## Expected Output:
 2
 
 ## Solution 1 (Shell Script):
