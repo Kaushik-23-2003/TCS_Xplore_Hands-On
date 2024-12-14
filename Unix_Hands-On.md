@@ -4,7 +4,7 @@ This repository contains solutions for various Unix commands and shell scripts d
 
 ---
 
-# 1. **Count Occurrence of Word ("Unix")**
+1. **Count Occurrence of Word ("Unix")**
 
 ## Task
 
