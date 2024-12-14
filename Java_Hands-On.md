@@ -120,12 +120,12 @@ Write a program to check the distance of 2D points from the origin and print the
 
 ### Sample Input:
 <pre>
-   2 
-   2 
-   3 
-   3 
-   -4 
-   -4 
+2 
+2 
+3 
+3 
+-4 
+-4 
 </pre>
 
 ### Expected Output:
