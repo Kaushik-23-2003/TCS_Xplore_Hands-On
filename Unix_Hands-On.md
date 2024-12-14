@@ -157,30 +157,28 @@ echo "$count"
 
 ## Solution 2 (Using awk):
 
-```bash
+```awk
 awk 'BEGIN {FS = ";"} 
 {
     s += $3; 
     ++c;
     a[$3] += $3;
     k[$1] += $1;
-    print "\033[32mProcessing record for EmpID:", $1, "\033[0m"  # Green for EmpID
 }  
 END{
     for (i in a) {
         if (i < s / (c - 2)) p += 1;
-        print "\033[34mChecking salary:", i, "\033[0m"  # Blue for salary check
     }
     for (j in k) {
         if (j == 5) {
-            print "\033[33mFinal result: ", p + 1, "\033[0m"  # Yellow for result when EmpID is 5
+            print(p + 1);
         } else if (j == 6) {
-            print "\033[33mFinal result: ", p, "\033[0m"  # Yellow for result when EmpID is 6
+            print(p);
         } else {
-            print "\033[31mFinal result: ", p - 1, "\033[0m"  # Red for default result
+            print(p - 1);
         }
     }
 }'
-
 ```
 ---
+
