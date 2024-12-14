@@ -1,9 +1,9 @@
 # Oracle SQL Queries
 
-
 ## Q1 - Employee Count
 
 **Query:**  
+
 Write the SQL query to display the count of employees in each department, ordered by the count in descending order. If multiple departments have the same number of employees, sort them by department name.
 
 **Solution:**
@@ -20,6 +20,7 @@ ORDER BY COUNT(Employees.eDeptId) DESC, Departments.deptName;
 ## Q2 - Display Department Details
 
 **Query:**  
+
 Write the SQL query to display the department ID and name of departments located on the "Ground Floor".
 
 **Solution:**
@@ -34,6 +35,7 @@ WHERE Dept_Location = 'Ground Floor';
 ## Q3 - Display Non-Programmer Department Name
 
 **Query:**  
+
 Write the SQL query to print the names of the departments that do not have any Programmers.
 
 **Solution:**
@@ -48,7 +50,8 @@ WHERE e.Emp_Dept_Id IS NULL;
 
 ## Q4 - Department Wise Skill
 
-**Query:**  
+**Query:** 
+
 Write the SQL query to print the department-wise skills of the employees working in each department.  
 If more than one employee in a department has the same skill, the skill should be printed once only.
 
@@ -66,6 +69,7 @@ ORDER BY d.Dept_Name DESC, e.Emp_Skill ASC;
 ## Q5 - Find Items Not Ordered
 
 **Query:**  
+
 Write the SQL query to display the name of the item/items for which no orders have been placed.
 
 **Solution:**
