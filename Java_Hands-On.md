@@ -28,8 +28,10 @@ Write a method `calculateInterest` which will take the `Account` object and `noO
 Finally, calculate the interest amount by multiplying the balance with the updated interest rate.
 
 **Input Example:**
-1 1000 10 5
-
+1 
+1000 
+10 
+5
 
 **Expected Output:**
 105.000
@@ -117,20 +119,12 @@ Write a program to check the distance of 2D points from the origin and print the
 - Define the method `pointWithHighestOriginDistance(Point p1, Point p2, Point p3)` in the `Solution` class which takes three point objects as input parameters and returns the point with the highest distance from the origin.
 
 ### Sample Input:
-2
-2
-3
-3
--4
--4
+<pre> ``` 2 2 3 3 -4 -4 ``` </pre>
 
 ### Expected Output:
 -4.0 -4.0
 
-
 This output indicates that the point with the highest distance from the origin is `(-4.0, -4.0)`.
-
----
 
 ### Solution:
 
