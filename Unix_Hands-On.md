@@ -5,7 +5,7 @@ This repository contains solutions for various Unix commands and shell scripts d
 
 ## 1. **Count Occurrence of Word ("Unix")**
 
-## Task
+### Task
 
 Write a Unix command to count the occurrence of the word "Unix" in a given file. The search should be case-insensitive.
 
@@ -23,9 +23,9 @@ grep -o -i unix $1 | wc -l
 ```
 ---
 
-# 2. **Word Count**
+## 2. **Word Count**
 
-## Task
+### Task
 Write the unix command to count the number of words in the first 3 lines of a file.
 
 ## Input File:
@@ -45,9 +45,9 @@ head -3|wc -w
 ```
 ---
 
-# 3. **Unix: Find Sum of Even Numbers**
+## 3. **Unix: Find Sum of Even Numbers**
 
-## Task
+### Task
 Write a Unix shell script to find the sum of all even numbers from a list of given numbers. The script should first take the count of numbers to be added as user input, followed by the numbers one by one.
 
 ## Input Format:
@@ -79,9 +79,9 @@ awk '
 ```
 ---
 
-# 4. **Unix: Highest Score**
+## 4. **Unix: Highest Score**
 
-## Task
+### Task
 Write a Unix command to find the name of the student who has the highest score. The student details are stored in a file with space as the delimiter, in the following format:
 
 ## Input File:
@@ -103,9 +103,9 @@ sort -k3,3 -rn -t" " file.txt | head -n1 | awk '{print $2}'
 ```
 ---
 
-# 5. Unix: Average Salary
+## 5. Unix: Average Salary
 
-## Task
+### Task
 Write a shell script to find the count of employees whose salary is less than the average salary of all employees. 
 
 ## Input File:
