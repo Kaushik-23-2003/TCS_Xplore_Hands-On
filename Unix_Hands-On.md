@@ -18,7 +18,7 @@ Unix is a multi-user, multi-tasking system. It is a command-based operating syst
 
 ### Solution:
 
-```bash
+```shell
 grep -o -i unix $1 | wc -l
 ```
 ---
