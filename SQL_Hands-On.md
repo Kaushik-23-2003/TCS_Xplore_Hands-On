@@ -1,13 +1,5 @@
 # Oracle SQL Queries
 
-## Table of Contents
-- [Q1 - Employee Count](#q1-employee-count)
-- [Q2 - Display Department Details](#q2-display-department-details)
-- [Q3 - Display Non-Programmer Department Name](#q3-display-non-programmer-department-name)
-- [Q4 - Department Wise Skill](#q4-department-wise-skill)
-- [Q5 - Find Items Not Ordered](#q5-find-items-not-ordered)
-
----
 
 ## Q1 - Employee Count
 
@@ -22,7 +14,7 @@ FROM Departments
 LEFT JOIN Employees ON Departments.deptId = Employees.eDeptId 
 GROUP BY Departments.deptId, Departments.deptName 
 ORDER BY COUNT(Employees.eDeptId) DESC, Departments.deptName;
-
+```
 ---
 
 ## Q2 - Display Department Details
@@ -36,7 +28,7 @@ Write the SQL query to display the department ID and name of departments located
 SELECT Dept_Id, Dept_Name 
 FROM Department 
 WHERE Dept_Location = 'Ground Floor';
-
+```
 ---
 
 ## Q3 - Display Non-Programmer Department Name
@@ -51,7 +43,7 @@ SELECT d.Dept_name
 FROM Departments d
 LEFT JOIN Employees e ON d.Dept_Id = e.Emp_Dept_Id AND e.Emp_Skill = 'Programmer'
 WHERE e.Emp_Dept_Id IS NULL;
-
+```
 ---
 
 ## Q4 - Department Wise Skill
@@ -68,7 +60,7 @@ FROM Departments d
 JOIN Employees e ON d.Dept_Id = e.Emp_Dept_Id
 GROUP BY d.Dept_Name, e.Emp_Skill
 ORDER BY d.Dept_Name DESC, e.Emp_Skill ASC;
-
+```
 ---
 
 ## Q5 - Find Items Not Ordered
@@ -83,3 +75,4 @@ SELECT i.Item_Name
 FROM Items i
 LEFT JOIN Orders o ON i.Item_Id = o.Item_Id
 WHERE o.Item_Id IS NULL;
+```
