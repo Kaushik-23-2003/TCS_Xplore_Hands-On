@@ -2,9 +2,8 @@
 
 This repository contains solutions for various Unix commands and shell scripts designed to solve common tasks like counting occurrences, finding averages, and processing input. Below are the tasks and their corresponding solutions.
 
----
 
-### 1. **Count Occurrence of Word ("Unix")**
+## 1. **Count Occurrence of Word ("Unix")**
 
 ## Task
 
