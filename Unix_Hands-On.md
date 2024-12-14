@@ -7,12 +7,15 @@ This repository contains solutions for various Unix commands and shell scripts d
 ## 1. **Count Occurrence of Word ("Unix")**
 
 ### Task
+
 Write a Unix command to count the occurrence of the word "Unix" in a given file. The search should be case-insensitive.
 
 **Input File:**
+
 Unix is a multi-user, multi-tasking system. It is a command-based operating system. We will learn unix architecture and the unix commands in this module.
 
 ### Expected Output:
+
 3
 
 ### Solution:
@@ -25,9 +28,11 @@ grep -o -i unix $1 | wc -l
 ## 2. **Word Count**
 
 ### Task
+
 Write the unix command to count the number of words in the first 3 lines of a file.
 
 **Input File:**
+
 Unix is a command based operating system.
 We will learn unix in this module.
 This is a test file.
@@ -35,6 +40,7 @@ We are using this file to practice some commands.
 We have reached the end of the file.
 
 **Expected Output:**
+
 19
 
 ### Solution:
@@ -106,9 +112,6 @@ sort -k3,3 -rn -t" " file.txt | head -n1 | awk '{print $2}'
 
 ## Task
 Write a shell script to find the count of employees whose salary is less than the average salary of all employees. 
-
-#### Input Format:
-EmpID;EmpName;Salary
 
 ### Input File:
 | EmpID | EmpName | Salary |
