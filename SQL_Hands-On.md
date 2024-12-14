@@ -1,4 +1,4 @@
-                                                                  # Oracle SQL Queries
+# Oracle SQL Queries
 
 ## Q1 - Employee Count
 
